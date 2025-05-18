@@ -164,6 +164,32 @@ nav ul {
     text-decoration: none;
   }
   
+  .card:hover {
+    transform: scale(1.02); /* ingrandimento card */
+  }
+  
+  .card:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8); 
+  }
+  
+  .card:hover .overlay {
+    background: rgba(0, 0, 0, 0.7); 
+  }
+
+  .preview:hover {
+    transform: scale(1.02); /* ingrandimento card */
+  }
+  
+  .preview:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8); 
+  }
+  
+  .preview:hover .overlay {
+    background: rgba(0, 0, 0, 0.7); 
+  }
+
   /* Responsive per schermi piccoli */
   @media (max-width: 768px) {
     .card-container {
@@ -256,7 +282,7 @@ footer {
 }
 
 footer svg {
-    max-width: 100%; /* Ensure the SVG scales responsively */
+    max-width: 100%;
     height: auto;
 }
 
@@ -274,19 +300,39 @@ footer svg {
 
 /*FINE HOME*/
 
-.griglia-parchi {
+.griglia-parchi-1 {
   margin-top: 200px;
-  display: flex;           /* Assicurati che gli SVG siano distribuiti correttamente */
-  justify-content: center; /* Centra gli SVG orizzontalmente */
-  align-items: center;     /* Centra gli SVG verticalmente */
+  display: flex;               
+  margin-bottom: 31px;
+  gap: 36px;
+  margin-right: 92px;
+  margin-left: 92px;
+}
+
+.griglia-parchi-2 {
+  margin-top: 31px;
+  display: flex;               
+  margin-bottom: 31px;
+  gap: 40px;
+  margin-right: 92px;
+  margin-left: 92px;
+}
+
+.griglia-parchi-3 {
+  display: flex;               
   margin-bottom: 100px;
+  gap: 48px;
+  margin-right: 92px;
+  margin-left: 92px;
 }
 
-.griglia-parchi svg{
-  width: 900px;
-  height: auto;
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: italic;
 }
-
 .paragrafo {
   max-width: 600px;         /* Limita la larghezza per migliorare la leggibilità */
   margin: 0 auto;           /* Centra il contenitore orizzontalmente */
