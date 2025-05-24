@@ -78,7 +78,7 @@ nav ul {
 .uno {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow:;
 }
 
 .uno img {
@@ -106,18 +106,20 @@ nav ul {
     bottom: 40px;
     left: 40px;
     color: white;
-    max-width: 400px;
+    max-width: 50%;
     font-size: 20px;
     line-height: 1.5;
     padding: 10px;
     box-sizing: border-box;
+    width: 100%;
 }
+
 .due-2 {
   position: absolute;
   bottom: 40px;
   left: 20px;
   color: white;
-  max-width: 400px;
+  max-width: 50%;
   font-size: 40px;
   
   padding: 10px;
@@ -195,6 +197,30 @@ nav ul {
     .card-container {
       grid-template-columns: 1fr;
     }
+    .griglia-parchi{
+        .card-container {
+          grid-template-columns: 1fr; /* Una colonna singola */
+          padding: 0 20px; /* Spazio ai lati */
+        }
+      
+        .card {
+          width: 100%;      /* Fa occupare tutta la larghezza disponibile */
+          max-width: 100%;  /* Previene overflow */
+        }
+        .card{
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      .due p{
+        font-size: 10px;
+        line-height: 1.5;
+        width: 100%;
+       
+      }
+      .due-2 p{
+        font-size: 20px;
+      }
   }
   
 
